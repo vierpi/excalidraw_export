@@ -51,7 +51,7 @@ function embedFonts(svg: string): string {
 function useLocalFonts(svg: string): string {
 
   // Note we have to use a function here because replaceAll() is broken.
-  svg = svg.replaceAll("font-family=\"Virgil, Segoe UI Emoji\"", () => "font-family=\"Virgil GS, Segoe UI Emoji\"");
+  svg = svg.replaceAll("font-family=\"Virgil, Segoe UI Emoji\"", () => "font-family=\"Virgil3YOFF, Segoe UI Emoji\"");
   svg = svg.replaceAll("font-family=\"Cascadia, Segoe UI Emoji\"", () => "font-family=\"Cascadia Code, Segoe UI Emoji\"");
   return svg;
 }
